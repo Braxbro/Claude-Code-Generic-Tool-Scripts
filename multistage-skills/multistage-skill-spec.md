@@ -156,7 +156,7 @@ Splitting retrieval from reasoning prevents the model from anchoring on early co
 
 ### Subagent identity
 
-If your pipeline stages invoke skills (e.g. `/search-doc`), tell the model it is a subagent running the pipeline — otherwise it may see other skills in its context and invoke them recursively. Add a line like:
+If your pipeline stages invoke skills (e.g. `/search-doc`), tell the model it is a subagent running the pipeline — otherwise it may see other skills for its task in its context and invoke them recursively. Add a line like:
 
 ```
 You are running as a subagent executing the <name> pipeline. Do not invoke /<name> or related skills — you are those stages.
