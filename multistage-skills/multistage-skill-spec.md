@@ -161,3 +161,5 @@ If your pipeline stages invoke skills (e.g. `/search-doc`), tell the model it is
 ```
 You are running as a subagent executing the <name> pipeline. Do not invoke /<name> or related skills — you are those stages.
 ```
+
+to the start of your MULTI-SKILL-CONTENT to avoid this.
