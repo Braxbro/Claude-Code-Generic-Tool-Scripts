@@ -117,11 +117,11 @@ description: "What this pipeline does."
 argument-hint: "<description of input>"
 ---
 
-Run this command from the workspace root and return its output verbatim:
+Run this command from the workspace root in the background and wait for the task notification:
 
-```
+\```
 bash _agent/scripts/multistage-skill.sh "${CLAUDE_SKILL_DIR}/MULTI-SKILL-CONTENT.md" "$ARGUMENTS"
-```
+\```
 ```
 
 The `${CLAUDE_SKILL_DIR}` variable is resolved by Claude Code before the skill runs, pointing to the directory containing the `SKILL.md` file.
